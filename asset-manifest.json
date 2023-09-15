@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/greenfiniti-react/static/css/main.44073605.css",
-    "main.js": "/greenfiniti-react/static/js/main.7ea7235c.js",
+    "main.css": "/greenfiniti-react/static/css/main.9a9bfe09.css",
+    "main.js": "/greenfiniti-react/static/js/main.2c022587.js",
     "static/js/787.252c5a3f.chunk.js": "/greenfiniti-react/static/js/787.252c5a3f.chunk.js",
     "static/media/starbucks-bg3.png": "/greenfiniti-react/static/media/starbucks-bg3.ec9afdc157a8594748f9.png",
     "index.html": "/greenfiniti-react/index.html",
-    "main.44073605.css.map": "/greenfiniti-react/static/css/main.44073605.css.map",
-    "main.7ea7235c.js.map": "/greenfiniti-react/static/js/main.7ea7235c.js.map",
+    "main.9a9bfe09.css.map": "/greenfiniti-react/static/css/main.9a9bfe09.css.map",
+    "main.2c022587.js.map": "/greenfiniti-react/static/js/main.2c022587.js.map",
     "787.252c5a3f.chunk.js.map": "/greenfiniti-react/static/js/787.252c5a3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44073605.css",
-    "static/js/main.7ea7235c.js"
+    "static/css/main.9a9bfe09.css",
+    "static/js/main.2c022587.js"
   ]
 }
