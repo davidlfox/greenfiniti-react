@@ -1,0 +1,60 @@
+const products = [
+    {
+        id: 1,
+        name: "Frappuccino with a longer title that wraps",
+        subtext: "Drink",
+        leafCount: 3,
+        price: 4.99,
+        imgSrc: "img/09.png",
+    },
+    {
+        id: 2,
+        name: "Coffee in a box!",
+        subtext: "Drink",
+        leafCount: 2,
+        price: 3.99,
+        imgSrc: "img/02.png",
+    },
+    {
+        id: 3,
+        name: "Breakfast Sammie",
+        subtext: "Food",
+        leafCount: 4,
+        price: 3.89,
+        imgSrc: "img/03.png",
+    },
+    {
+        id: 4,
+        name: "Dark Wonder with caramel latte twist",
+        subtext: "Drink",
+        leafCount: 6,
+        price: 8.99,
+        imgSrc: "img/04.png",
+    },
+    {
+        id: 5,
+        name: "Whole lotta coffee beans",
+        subtext: "Drink",
+        leafCount: 1,
+        price: 1.99,
+        imgSrc: "img/08.png",
+    },
+    {
+        id: 6,
+        name: "Drink Pack",
+        subtext: "Drink",
+        leafCount: 9,
+        price: 10.99,
+        imgSrc: "img/06.png",
+    },
+    {
+        id: 7,
+        name: "Some kinda latte",
+        subtext: "Drink",
+        leafCount: 7,
+        price: 8.99,
+        imgSrc: "img/07.png",
+    },
+];
+
+export default products;
