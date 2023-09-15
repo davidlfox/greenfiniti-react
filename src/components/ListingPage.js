@@ -15,7 +15,7 @@ function ListingPage() {
                         </div>
                     </div>
                     <div className="col text-center">
-                        <strong>Products-test</strong>
+                        <strong>Products</strong>
                     </div>
                     <div className="col text-end">
                         <i className="fa-solid fa-ellipsis-vertical"></i>
