@@ -1,38 +1,307 @@
-.App {
-  text-align: center;
+/* .page-detail-container,
+.page-checkout-container,
+.page-summary-container {
+    display: none;
+} */
+
+.phone-frame {
+    width: 375px; /* Width of an iPhone X */
+    height: 812px; /* Height of an iPhone X */
+    border: 16px solid black;
+    border-radius: 36px;
+    margin: 50px auto; /* Center the phone frame */
+    position: relative;
+    background: black;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* product listing page */
+
+.icon-circle {
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the div circular */
+    background-color: rgb(
+        245,
+        245,
+        245
+    ); /* Choose your desired background color */
+    display: flex; /* Using flex to center the icon both horizontally and vertically */
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon-circle-detail {
+    background-color: rgb(63, 136, 104);
 }
 
-.App-link {
-  color: #61dafb;
+.row-product .col-4 {
+    position: relative;
+    margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row-product img {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 17px;
+}
+
+.row-product .leaf {
+    background-color: rgb(255, 139, 61) !important;
+    color: white !important;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 25px;
+}
+
+.row-product .title {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    line-height: 1.5;
+}
+
+.row-product .subtext {
+    font-size: 10px;
+    color: gray;
+}
+
+.row-product .price {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.row-product .btn-buy {
+    font-weight: 400;
+    color: rgb(67, 144, 114) !important;
+    background-color: rgb(211, 235, 226) !important;
+    cursor: pointer;
+}
+
+/* product detail page */
+
+#page-detail {
+    background-image: url("img/starbucks-bg3.png");
+}
+
+.bgwhite {
+    background-color: white;
+}
+
+#page-detail .row.hero {
+    min-height: 250px;
+}
+
+.go-back-listing {
+    cursor: pointer;
+}
+
+.detail-main {
+    background-color: white;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+
+.coins {
+    position: relative;
+}
+
+.coin-circle {
+    width: 45px; /* Adjust as needed */
+    height: 45px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the div circular */
+    background-color: rgb(
+        242,
+        156,
+        78
+    ); /* Choose your desired background color */
+    display: flex; /* Using flex to center the icon both horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 52px;
+    color: white;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.coins .text {
+    color: rgb(0, 108, 70);
+    font-size: 12px;
+}
+
+.detail-main strong {
+    font-size: 18px;
+}
+
+.choose {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sizes {
+    font-size: 13px;
+    padding-top: 3px;
+}
+
+.price h3 {
+    display: inline;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.price sup {
+    font-size: 14px;
+}
+
+.footprint {
+    padding-top: 35px;
+}
+
+.footprint strong {
+    color: rgb(102, 102, 102);
+}
+
+.meters {
+    color: rgb(137, 137, 137);
+    font-weight: 500;
+}
+
+.meter.your {
+    background-color: rgb(242, 156, 78) !important;
+    color: white !important;
+    font-weight: 400;
+}
+
+.meter.industry {
+    background-color: rgb(133, 133, 133) !important;
+    color: white !important;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+}
+
+.meter.message {
+    font-size: 10px;
+}
+
+.placeorder {
+    padding-top: 50px;
+}
+
+.placeorder button {
+    display: block;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.placeorder button span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* checkout page */
+
+.white {
+    color: white !important;
+}
+.black {
+    color: black !important;
+}
+
+.go-back-details {
+    cursor: pointer;
+}
+
+.bggreen {
+    background-color: rgb(0, 108, 70) !important;
+    background-image: url("img/starbucks-bg3.png");
+    background-repeat: no-repeat;
+}
+
+.checkout-container {
+    margin-top: 175px !important;
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+    background-color: white;
+    border-radius: 17px;
+}
+
+.checkout-container .price {
+    font-size: 16px !important;
+    display: block;
+}
+
+.shipping-txt,
+.payment-txt,
+.tandc-txt {
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+}
+
+.address {
+    margin-left: 10px;
+    padding: 20px;
+    background-color: rgb(237, 237, 237);
+    font-size: 10px;
+}
+
+.carbon span {
+    font-size: 12px;
+}
+
+.creditcard div {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+    font-size: 14px;
+}
+
+.accept {
+    font-size: 12px;
+}
+
+.checkout-container .placeorder button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/* summary page */
+
+.summary-container {
+    margin-top: 160px !important;
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+    background-color: white;
+    border-radius: 17px;
+}
+
+.summary-row img {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 17px;
+}
+
+.carbon-summary {
+    font-size: 11px;
+}
+
+.shipment-address,
+.payment-details {
+    font-size: 12px;
+}
+
+.summary-container .placeorder button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }

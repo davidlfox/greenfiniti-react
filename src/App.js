@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import ListingPage from "./components/ListingPage";
+import DetailPage from "./components/DetailPage";
+import CheckoutPage from "./components/CheckoutPage";
+import SummaryPage from "./components/SummaryPage";
+import "bootstrap/dist/css/bootstrap.min.css";
+// Optionally, if you need Bootstrap's JavaScript features:
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [page, setPage] = useState("summary");
+
+    return (
+        <div className="phone-frame">
+            {page === "listing" && <ListingPage />}
+            {page === "detail" && <DetailPage />}
+            {page === "checkout" && <CheckoutPage />}
+            {page === "summary" && <SummaryPage />}
+        </div>
+    );
 }
 
 export default App;
